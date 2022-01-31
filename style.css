@@ -1,0 +1,14 @@
+.navbar-style {
+  background-color: saddlebrown;
+}
+.site-footer {
+  background-image: linear-gradient(gray, white);
+  padding: 20px 0;
+}
+.row-content {
+  padding: 40px;
+}
+.body-content {
+  padding-left: 50px;
+  padding-right: 50px;
+}

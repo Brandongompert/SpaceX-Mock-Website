@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SpaceX Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row bg-dark">
+          <div class="col-md-3">
+            <h2>
+              <img
+                src="img/SpaceX-Logo.svg"
+                height="100"
+                width="200"
+                alt="Home Logo"
+              />
+            </h2>
+          </div>
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#homenav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="homenav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <h3>
+                      <a class="nav-link mx-5" href="#"
+                        ><i class="fa fa-home"></i> Home</a
+                      >
+                    </h3>
+                  </li>
+                  <li class="nav-item">
+                    <h3>
+                      <a class="nav-link mx-5" href="technology.html"
+                        ><i class="fa fa-robot"></i>Technology</a
+                      >
+                    </h3>
+                  </li>
+                  <li class="nav-item">
+                    <h3>
+                      <a class="nav-link mx-5" href="careers.html"
+                        ><i class="fa fa-rocket"></i> Careers</a
+                      >
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mx-1">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+    </header>
+
+    <div class="container-fluid body-content">
+      <div class="row row-content align-items-center">
+        <div class="col-sm-2">
+          <img
+            src="img/mars-planet.png"
+            alt="Mars-Photo"
+            height="160"
+            width="160"
+            class="d-flex"
+          />
+        </div>
+        <div class="col-sm-6 justify-content-start mx-5">
+          <h3>Our Mission</h3>
+          <p class="text-sm-left d-none d-sm-block">
+            The mission of SpaceX is to accelerate the goal of making human-kind
+            a multi-planetary species. First and foremost, creating a colony on
+            Mars.
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-content justify-content-end">
+        <!--Newsletter signup-->
+        <div class="col-6 align-self-end">
+          <h3>Newsletter:</h3>
+          <h5>Sign up to our weekly newsletter!</h5>
+          <button
+            type="button"
+            class="btn btn-secondary mt-2"
+            data-bs-toggle="modal"
+            data-bs-target="#newsletterModal"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Current Aerospace Events</h3>
+          <rssapp-carousel id="vIcCPsaDhKxkuymt"></rssapp-carousel>
+          <script
+            src="https://widget.rss.app/v1/carousel.js"
+            type="text/javascript"
+            async
+          ></script>
+        </div>
+      </div>
+
+      <!--Newsletter Modal-->
+      <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button
+                type="button"
+                class="close btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address:
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email Adress"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="technology.html">Technology</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/spacex"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-google"
+              href="http://youtube.com/spacex"
+              ><i class="fab fa-youtube fa-lg"></i
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a role="button" class="btn btn-link" href="tel:+14445551234"
+              ><i class="fa fa-phone"></i> 1-444-555-1234</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link"
+              href="mailto:careers@spacex.com"
+              ><i class="fa fa-envelope"></i> careers@spacex.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
