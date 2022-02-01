@@ -12,3 +12,7 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+#map {
+  height: 300px;
+  width: 300px;
+}
