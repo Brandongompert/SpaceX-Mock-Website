@@ -36,13 +36,14 @@
       <div class="container-fluid">
         <div class="row bg-dark">
           <div class="col-md-3">
-            <h2>
+            <h2><a href="index.html">
               <img
                 src="img/SpaceX-Logo.svg"
                 height="100"
                 width="200"
                 alt="Home Logo"
               />
+              </a>
             </h2>
           </div>
           <div class="col">
@@ -93,8 +94,112 @@
     </header>
 
     <div class="container body-content">
+      <div class="row row-content">
+        <div class="col-8 mx-auto">
+          <h2 class="text-center">Technology</h2>
+          <hr>
+          <div
+            id="technologyCarousel"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <ol>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/raptor-engines-with-woman.jpeg"
+                  class="d-block mx-auto"
+                  alt="Raptor Engines With Woman"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/starship-orbit-concept.jpeg"
+                  class="d-block mx-auto"
+                  alt="Starship Orbit Concept"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/astronaut-crew.jpeg"
+                  class="d-block mx-auto"
+                  alt="Astronaut Crew"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/spacex-fuel-tank.jpeg.crdownload"
+                  class="d-block mx-auto"
+                  alt="Starship Orbit Concept"
+                  height="400"
+                  width="600"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 offset-1">
           <div class="media">
             <div class="media-body">
               <h2>Falcon 9</h2>
@@ -114,9 +219,29 @@
             </div>
           </div>
         </div>
+        <div class="col offset-2">
+          <div class="media">
+            <div class="media-body">
+              <h2>Falcon Heavy</h2>
+              <img
+                src="img/falconheavy.jpeg"
+                alt="Falcon Heavy"
+                height="400"
+                width="400"
+              />
+
+              <p class="d-none d-sm-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                labore eaque itaque deleniti aut blanditiis? Blanditiis commodi
+                molestias ipsum temporibus corrupti sequi id, numquam enim
+                perspiciatis explicabo ad earum nostrum.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <div class="col offset-8">
+        <div class="col offset-7">
           <div class="media">
             <div class="media-body">
               <h2>Starship Prototype</h2>
