@@ -1,244 +1,521 @@
-<link rel="stylesheet" href="/styles/style.css" />
-
-<!--Text flows over image but text is aligned right-->
-<div class="row row-content align-items-center">
-  <div class="col-sm-2">
-    <img
-      src="img/mars-planet.png"
-      alt="Mars-Photo"
-      height="160"
-      width="160"
-      class="mx-3"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-  </div>
-  <div class="col-sm-6 d-none d-sm-block">
-    <h3>Our Mission</h3>
-    <p class="text-sm-right">
-      The mission of SpaceX is to accelerate the goal of making human-kind a
-      multi-planetary species. First and foremost, creating a colony on Mars.
-    </p>
-  </div>
-</div>
 
-<!--Text breaks well but text won't align right-->
-<div class="container">
-  <div class="row row-content">
-    <div class="col">
-      <div class="media">
-        <img
-          src="img/mars-planet.png"
-          alt="Mars-Photo"
-          height="160"
-          width="160"
-          class="mr-3 d-flex"
-        />
-        <div class="media-body">
-          <h3>Our Mission</h3>
-          <p>
-            The mission of SpaceX is to accelerate the goal of making human-kind
-            a multi-planetary species. First and foremost, creating a colony on
-            Mars.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Attempting pagination lol-->
-<div class="container body-content" id="job-2">
-  <form>
-    <div class="row mx-4 form-group">
-      <label for="jobTitle" class="col-form-label col-2"
-        ><h5>Job Title</h5></label
-      >
-      <div class="col-4">
-        <input
-          type="text"
-          id="firstName"
-          class="form-control"
-          name="jobTitle"
-          placeholder="Job Title"
-        />
-      </div>
-      <label for="location" class="col-form-label col-1"
-        ><h5>Location</h5></label
-      >
-      <div class="col-4">
-        <select class="form-control">
-          <option value="Hawthorne, CA">Hawthorne, CA</option>
-          <option value="Cape Canaveral, FL">Cape Canaveral, FL</option>
-          <option value="Location Flexible">Location Flexible</option>
-        </select>
-      </div>
-    </div>
-    <div class="row row-content form-group">
-      <label for="location" class="col-form-label col-2"
-        ><h5>Position Type</h5></label
-      >
-      <div class="col-4">
-        <select class="form-control">
-          <option value="Full-Time">Full-Time</option>
-          <option value="Part-Time">Part-Time</option>
-        </select>
-      </div>
-      <div class="col-2 mx-auto">
-        <button type="submit" class="btn btn-dark">Search Jobs</button>
-      </div>
-    </div>
-  </form>
-  <div class="row">
-    <div class="col">
-      <div class="list-group">
-        <a
-          class="list-group-item list-group-item-action bg-dark text-white"
-          aria-current="true"
-        >
-          <div class="row">
-            <div class="col"><h4>Job Title</h4></div>
-            <div class="col"><h4>Location</h4></div>
-            <div class="col"><h4>Position Type</h4></div>
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row bg-dark">
+          <div class="col-md-3">
+            <h2><a href="index.html">
+              <img
+                src="img/SpaceX-Logo.svg"
+                height="100"
+                width="200"
+                alt="Home Logo"
+              />
+              </a>
+            </h2>
           </div>
-        </a>
-        <a
-          href="#"
-          class="list-group-item list-group-item-action"
-          aria-current="true"
-        >
-          <div class="row">
-            <div class="col">FrontEnd Sodsafasdfasdfsdfasdtarlink</div>
-            <div class="col">Hawthorne, CA</div>
-            <div class="col">Full-time</div>
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#homenav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="homenav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <h3>
+                      <a class="nav-link mx-5" href="index.html"
+                        >Home</a
+                      >
+                    </h3>
+                  </li>
+                  <li class="nav-item">
+                    <h3>
+                      <a class="nav-link mx-5" href="#"
+                        >Technology</a
+                      >
+                    </h3>
+                  </li>
+                  <li class="nav-item">
+                    <h3>
+                      <a class="nav-link mx-5" href="careers.html"
+                        >Careers</a
+                      >
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-        </a>
-        <a
-          href="careerlanding.html"
-          class="list-group-item list-group-item-action"
-          >Propulsion Engineer - Falcon 9</a
-        >
-        <a
-          href="careerlanding.html"
-          class="list-group-item list-group-item-action"
-          >Sr. Software Engineer, C++</a
-        >
-        <a
-          href="careerlanding.html"
-          class="list-group-item list-group-item-action"
-          >Production Supervisor - Starlink</a
-        >
-        <a
-          href="careerlanding.html"
-          class="list-group-item list-group-item-action"
-          >Materials Engineer - Starship</a
-        >
-      </div>
-    </div>
-  </div>
-  <div class="container body-content" id="job-1">
-    <form>
-      <div class="row mx-4 form-group">
-        <label for="jobTitle" class="col-form-label col-2"
-          ><h5>Job Title</h5></label
-        >
-        <div class="col-4">
-          <input
-            type="text"
-            id="firstName"
-            class="form-control"
-            name="jobTitle"
-            placeholder="Job Title"
-          />
-        </div>
-        <label for="location" class="col-form-label col-1"
-          ><h5>Location</h5></label
-        >
-        <div class="col-4">
-          <select class="form-control">
-            <option value="Hawthorne, CA">Hawthorne, CA</option>
-            <option value="Cape Canaveral, FL">Cape Canaveral, FL</option>
-            <option value="Location Flexible">Location Flexible</option>
-          </select>
         </div>
       </div>
-      <div class="row row-content form-group">
-        <label for="location" class="col-form-label col-2"
-          ><h5>Position Type</h5></label
-        >
-        <div class="col-4">
-          <select class="form-control">
-            <option value="Full-Time">Full-Time</option>
-            <option value="Part-Time">Part-Time</option>
-          </select>
-        </div>
-        <div class="col-2 mx-auto">
-          <button type="submit" class="btn btn-dark">Search Jobs</button>
-        </div>
-      </div>
-    </form>
-    <div class="row">
-      <div class="col">
-        <div class="list-group">
-          <a
-            class="list-group-item list-group-item-action bg-dark text-white"
-            aria-current="true"
-          >
-            <div class="row">
-              <div class="col"><h4>Job Title</h4></div>
-              <div class="col"><h4>Location</h4></div>
-              <div class="col"><h4>Position Type</h4></div>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="list-group-item list-group-item-action"
-            aria-current="true"
-          >
-            <div class="row">
-              <div class="col">FrontEnd Software Engineer - Starlink</div>
-              <div class="col">Hawthorne, CA</div>
-              <div class="col">Full-time</div>
-            </div>
-          </a>
-          <a
-            href="careerlanding.html"
-            class="list-group-item list-group-item-action"
-            >Propulsion Engineer - Falcon 9</a
-          >
-          <a
-            href="careerlanding.html"
-            class="list-group-item list-group-item-action"
-            >Sr. Software Engineer, C++</a
-          >
-          <a
-            href="careerlanding.html"
-            class="list-group-item list-group-item-action"
-            >Production Supervisor - Starlink</a
-          >
-          <a
-            href="careerlanding.html"
-            class="list-group-item list-group-item-action"
-            >Materials Engineer - Starship</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#job-1">1</a></li>
-          <li class="page-item"><a class="page-link" href="#job-2">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Technology</li>
+        </ol>
       </nav>
+    </header>
+
+    <div class="container body-content">
+      <div class="row row-content">
+        <div class="col-8 mx-auto">
+          <h2 class="text-center">Technology</h2>
+          <hr>
+          <div
+            id="technologyCarousel"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <ol>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/raptor-engines-with-woman.jpeg"
+                  class="d-block mx-auto"
+                  alt="Raptor Engines With Woman"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/starship-orbit-concept.jpeg"
+                  class="d-block mx-auto"
+                  alt="Starship Orbit Concept"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/astronaut-crew.jpeg"
+                  class="d-block mx-auto"
+                  alt="Astronaut Crew"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/spacex-fuel-tank.jpeg"
+                  class="d-block mx-auto"
+                  alt="Rocket Fuel Tank"
+                  height="400"
+                  width="600"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row row-content">
+        <div class="col-4 offset-1">
+          <div class="card" style="width: 18.75rem">
+            <img
+              src="img/falcon9.jpg"
+              class="card-img-top"
+              alt="Falcon 9"
+              height="400"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Falcon 9
+                <hr>
+              </h4>
+              <p class="card-text">
+                Falcon 9 is our 2-stage partially reusable rocket, powered by Merlin engines with cryogenic liquid oxygen and rocket-grade kerosene as fuel.  Falcon 9 is unique because each rocket has a reusable first stage, and we have rockets that have flown over 10 missions.  It has delivered hundreds of payloads into orbit, recovering over 100 first stage boosters, and that number is rapidly increasing every year.
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col offset-2">
+          <div class="card" style="width: 25rem">
+            <img
+              src="img/falconheavy.jpeg"
+              class="card-img-top"
+              alt="Falcon Heavy"
+              height="400"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Falcon Heavy
+                <hr>
+              </h4>
+              <p class="card-text">
+                Falcon Heavy is currently the most powerful rocket commercially available in the world.  Falcon Heavy consists of 3 Falcon 9 first stages, with a lone second stage in the middle.  
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-4 offset-1">
+          <div class="card" style="width: 18.75rem">
+            <img
+              src="img/merlin-engine.jpeg"
+              class="card-img-top"
+              alt="Merlin Engine"
+              height="300"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Merlin Engine
+                <hr>
+              </h4>
+              <p class="card-text">
+                Each Falon 9 first stage is equipped with 9 Merlin engines. Merlin engines use RP-1 and liquid oxygen as rocket propellants in a gas-generator power cycle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col offset-2">
+          <div class="card" style="width: 25rem">
+            <img
+              src="img/starship.jpeg"
+              class="card-img-top"
+              alt="Starship"
+              height="300"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Starship
+                <hr>
+              </h4>
+              <p class="card-text">
+                Starship is still currently in production/testing phase.  Starship will be the next generation of rocket technology, being fully reusable and capable of rapid reusability.  Starship stands 400ft tall and will be by far the largest and most powerful rocket in mankinds history.  One of the main goals of this rocket will be to handle the large payload capacity required to start a colony on Mars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              href="http://instagram.com/spacex"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              href="http://facebook.com/spacex"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              href="http://twitter.com/spacex"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+            <a
+              class="btn btn-social-icon btn-google"
+              href="http://youtube.com/spacex"
+              ><i class="fab fa-youtube fa-lg"></i
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a role="button" class="btn btn-link" href="tel:+14445551234"
+              ><i class="fa fa-phone"></i> 1-444-555-1234</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link"
+              href="mailto:careers@spacex.com"
+              ><i class="fa fa-envelope"></i> careers@spacex.com</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link align-self-start"
+              href="contactus.html"
+              ><i class="fa fa-question-circle"></i>Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!--<div class="container body-content">
+      <div class="row row-content">
+        <div class="col-8 mx-auto">
+          <h2 class="text-center">Technology</h2>
+          <hr>
+          <div
+            id="technologyCarousel"
+            class="carousel carousel-dark slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <ol>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#technologyCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/raptor-engines-with-woman.jpeg"
+                  class="d-block mx-auto"
+                  alt="Raptor Engines With Woman"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/starship-orbit-concept.jpeg"
+                  class="d-block mx-auto"
+                  alt="Starship Orbit Concept"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/astronaut-crew.jpeg"
+                  class="d-block mx-auto"
+                  alt="Astronaut Crew"
+                  height="400"
+                  width="600"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/spacex-fuel-tank.jpeg"
+                  class="d-block mx-auto"
+                  alt="Rocket Fuel Tank"
+                  height="400"
+                  width="600"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#technologyCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-4 offset-1">
+          <div class="media">
+            <div class="media-body">
+              <h2>Falcon 9</h2>
+              <img
+                src="img/falcon9.jpg"
+                alt="Falcon 9"
+                height="400"
+                width="300"
+              />
+
+              <p class="d-none d-sm-block mt-3">
+                Falcon 9 is our 2-stage partially reusable rocket, powered by Merlin engines with cryogenic liquid oxygen and rocket-grade kerosene as fuel.  Falcon 9 is unique because each rocket has a reusable first stage, and we have rockets that have flown over 10 missions.  It has delivered hundreds of payloads into orbit, recovering over 100 first stage boosters, and that number is rapidly increasing every year.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col offset-2">
+          <div class="media">
+            <div class="media-body">
+              <h2>Falcon Heavy</h2>
+              <img
+                src="img/falconheavy.jpeg"
+                alt="Falcon Heavy"
+                height="400"
+                width="400"
+              />
+
+              <p class="d-none d-sm-block mt-3">
+                Falcon Heavy is currently the most powerful rocket commercially available in the world.  Falcon Heavy consists of 3 Falcon 9 first stages, with a lone second stage in the middle.  
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 offset-1">
+          <div class="media">
+            <div class="media-body">
+              <h2>Merlin Engine</h2>
+              <img
+                src="img/merlin-engine.jpeg"
+                alt="Falcon 9"
+                height="300"
+                width="300"
+              />
+
+              <p class="d-none d-sm-block mt-3">
+                Each Falon 9 first stage is equipped with 9 Merlin engines. Merlin engines use RP-1 and liquid oxygen as rocket propellants in a gas-generator power cycle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col offset-2">
+          <div class="media">
+            <div class="media-body">
+              <h2>Starship Prototype</h2>
+              <img
+                src="img/starship.jpeg"
+                alt="Starship Prototype"
+                height="300"
+                width="400"
+              />
+
+              <p class="d-none d-sm-block mt-3">
+                Starship is still currently in production/testing phase.  Starship will be the next generation of rocket technology, being fully reusable and capable of rapid reusability.  Starship stands 400ft tall and will be by far the largest and most powerful rocket in mankinds history.  One of the main goals of this rocket will be to handle the large payload capacity required to start a colony on Mars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->

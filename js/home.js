@@ -1,7 +1,6 @@
 //RANDOM QUOTE GENERATOR
 let quote = document.getElementsByClassName("quote-generator");
 let randomChoice;
-let jsonData = fetch("https://type.fit/api/quotes");
 //function that returns random quote into each quote-generator class element
 for (let i = 0; i <= quote.length; i++) {
   jsonData = fetch("https://type.fit/api/quotes")
@@ -19,6 +18,6 @@ for (let i = 0; i <= quote.length; i++) {
 //random choice function ** used to randomly generate a quote from quote JSON data **
 function choose(choices) {
   jsonData = choices;
-  var index = Math.floor(Math.random() * choices.length);
+  let index = Math.floor(Math.random() * choices.length);
   return choices[index];
 }
