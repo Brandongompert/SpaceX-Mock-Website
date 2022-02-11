@@ -2,7 +2,7 @@
 let quote = document.getElementsByClassName("quote-generator");
 let randomChoice;
 //function that returns random quote into each quote-generator class element
-for (let i = 0; i <= quote.length; i++) {
+for (let i = 0; i < quote.length; i++) {
   jsonData = fetch("https://type.fit/api/quotes")
     .then((response) => response.json())
     .then((data) => (randomChoice = choose(data)))

@@ -19,11 +19,26 @@
 
 .nav-link:hover {
   text-decoration: underline;
+  transition: 0.6s;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .quote-generator:hover {
   color: white;
   transition: 0.5s;
+}
+
+.tech-card {
+  transition: 1s;
+}
+
+.tech-card:hover {
+  transform: scale(1.1);
+}
+
+.carousel-img {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
