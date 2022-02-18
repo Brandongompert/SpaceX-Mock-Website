@@ -89,23 +89,32 @@
     <div class="container body-content">
       <form>
         <div class="row mx-4 form-group">
-          <label for="jobTitle" class="col-form-label col-2"
+          <label for="jobTitleSearch" class="col-form-label col-2"
             ><h5>Job Title:</h5></label
           >
           <div class="col-4">
             <input
               type="text"
-              id="firstName"
+              id="jobTitleSearch"
               class="form-control"
               name="jobTitle"
               placeholder="Job Title"
             />
           </div>
-          <label for="location" class="col-form-label col-1"
+          <label for="jobLocation" class="col-form-label col-1"
             ><h5>Location:</h5></label
           >
           <div class="col-4">
-            <select class="form-control">
+            <select class="form-control" id="jobLocation">
+              <option
+                value="placeholder"
+                disabled
+                selected
+                aria-disabled="true"
+                hidden
+              >
+                Choose Location
+              </option>
               <option value="Hawthorne, CA">Hawthorne, CA</option>
               <option value="Cape Canaveral, FL">Cape Canaveral, FL</option>
               <option value="Location Flexible">Location Flexible</option>
@@ -113,18 +122,29 @@
           </div>
         </div>
         <div class="row row-content form-group">
-          <label for="location" class="col-form-label col-2"
+          <label for="jobType" class="col-form-label col-2"
             ><h5>Position Type:</h5></label
           >
           <div class="col-4">
-            <select class="form-control">
+            <select class="form-control" id="jobType">
+              <option
+                value="placeholder"
+                disabled
+                selected
+                hidden
+                aria-disabled="true"
+              >
+                Type
+              </option>
               <option value="Full-Time">Full-Time</option>
               <option value="Part-Time">Part-Time</option>
               <option value="Intern">Intern</option>
             </select>
           </div>
           <div class="col-md-2 mx-auto">
-            <button type="submit" class="btn btn-dark">Search Jobs</button>
+            <button type="button" class="btn btn-dark" id="jobSearchSubmit">
+              Search Jobs
+            </button>
           </div>
         </div>
       </form>
@@ -153,6 +173,7 @@
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
                   aria-current="true"
+                  id="job-row"
                 >
                   <div class="row">
                     <div class="col">FrontEnd Software Engineer - Starlink</div>
@@ -163,6 +184,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Propulsion Engineer - Falcon 9</div>
                     <div class="col">Cape Canaveral, FL</div>
@@ -172,6 +194,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Sr. Software Engineer, C++</div>
                     <div class="col">Location Flexible</div>
@@ -181,6 +204,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Production Supervisor - Starlink</div>
                     <div class="col">Hawthorne, CA</div>
@@ -190,6 +214,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Materials Engineer - Starship</div>
                     <div class="col">Hawthorne, CA</div>
@@ -223,6 +248,7 @@
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
                   aria-current="true"
+                  id="job-row"
                 >
                   <div class="row">
                     <div class="col">Application Software Engineer</div>
@@ -233,6 +259,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Sr. Web Developer</div>
                     <div class="col">Location Flexible</div>
@@ -242,6 +269,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Build Engineer, Starship</div>
                     <div class="col">Hawthorne, CA</div>
@@ -251,6 +279,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Lead Radiation Effect Engineer</div>
                     <div class="col">Hawthorne, CA</div>
@@ -260,6 +289,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">
                       Summer 2022 Associate Engineer - Post Grad
@@ -295,6 +325,7 @@
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
                   aria-current="true"
+                  id="job-row"
                 >
                   <div class="row">
                     <div class="col">
@@ -307,6 +338,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Facilities Technician</div>
                     <div class="col">Cape Canaveral, FL</div>
@@ -316,6 +348,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Sr. Software Engineer, C++</div>
                     <div class="col">Location Flexible</div>
@@ -325,6 +358,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Security Officer 2</div>
                     <div class="col">Hawthorne, CA</div>
@@ -334,6 +368,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Payroll Analyst</div>
                     <div class="col">Hawthorne, CA</div>
@@ -367,6 +402,7 @@
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
                   aria-current="true"
+                  id="job-row"
                 >
                   <div class="row">
                     <div class="col">FrontEnd Software Engineer - Starlink</div>
@@ -377,6 +413,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Sr. Tax Analyst</div>
                     <div class="col">Hawthorne, CA</div>
@@ -386,6 +423,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">EMI/EMC Engineer</div>
                     <div class="col">Location Flexible</div>
@@ -395,6 +433,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Electrical Test Engineer, Avionics</div>
                     <div class="col">Hawthorne, CA</div>
@@ -404,6 +443,7 @@
                 <a
                   href="careerlanding.html"
                   class="list-group-item list-group-item-action"
+                  id="job-row"
                   ><div class="row">
                     <div class="col">Ground Segment Operations Specialist</div>
                     <div class="col">Hawthorne, CA</div>
@@ -529,6 +569,7 @@
       </div>
     </footer>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="js/jobSearch.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
